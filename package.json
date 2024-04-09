@@ -1,0 +1,40 @@
+{
+  "name": "ifa-notification-mgr",
+  "version": "2.0.0",
+  "description": "Notification Manager for App Store and Email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev-windows": "set NODE_ENV=development && nodemon index.js",
+    "start:prod": "export NODE_ENV=production && nodemon index.js",
+    "start:prod-windows": "set NODE_ENV=production && nodemon index.js",
+    "start:colo": "export NODE_ENV=colo && node index.js",
+    "start:colo-windows": "set NODE_ENV=colo && nodemon index.js",
+    "start:uat": "export NODE_ENV=uat && nodemon index.js",
+    "start:uat-windows": "set NODE_ENV=uat && nodemon index.js"
+  },
+  "author": "moaaz.shareef@intelliflow.ai/kashyap.prakashan@intelliflow.ai",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.1",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "html-validator": "^6.0.1",
+    "jsdom": "^22.0.0",
+    "kafkajs": "2.2.4",
+    "mongodb": "^4.6.0",
+    "mongoose": "^7.1.0",
+    "multer": "^1.4.5-lts.1",
+    "node-html-parser": "^6.1.5",
+    "nodemailer": "6.9.1",
+    "nodemon": "2.0.20",
+    "path": "^0.12.7",
+    "stream": "^0.0.2"
+  }
+}
